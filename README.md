@@ -33,7 +33,7 @@ If you are not farmilar with git, please click the fllowing link.
 # Problem List
 ## 线性结构：数组、链表、栈、队列
 
-1.给出洗牌的一个算法，并将洗好的牌存储在一个整形数组里。
+[1.给出洗牌的一个算法，并将洗好的牌存储在一个整形数组里。](https://github.com/wangjinlei/interview-problems/tree/develop/001)
 
 
 2.写一个函数，检查字符是否是整数，如果是，返回其整数值。
@@ -41,18 +41,16 @@ If you are not farmilar with git, please click the fllowing link.
 
 
 百度面试题
-3.2010 年3 道百度面试题[相信，你懂其中的含金量]  
-a~z 包括大小写与0~9 组成的N 个数, 用最快的方式把其中重复的元素挑出来。  
+3.a~z 包括大小写与0~9 组成的N 个数, 用最快的方式把其中重复的元素挑出来。  
 
 
 百度面试题  
 4.一个int 数组，里面数据无任何限制，要求求出所有这样的数a[i]，其左边的数都小于等于它，右边的数都大于等于它。能否只用一个额外数组和少量其它空间实现。  
 
 
-第3 组百度面试题  
-今年百度的一道题目  
-5.百度笔试：给定一个存放整数的数组，重新排列数组使得数组左边为奇数，右边为偶数。  
-要求：空间复杂度O(1)，时间复杂度为O（n）。  
+
+[5.百度笔试：给定一个存放整数的数组，重新排列数组使得数组左边为奇数，右边为偶数。  ](https://github.com/wangjinlei/interview-problems/tree/develop/005)
+要求：空间复杂度O(1)，时间复杂度为O（n）。  ()
 
 
 关于链表问题的面试题目如下：    
@@ -230,7 +228,7 @@ push 1，push 2，push 3，push 4，pop，push 5，pop，pop，pop，pop，
 
 33  
 链表操作，  
-（1）.单链表就地逆置，  
+[（1）.单链表就地逆置，  ](https://github.com/wangjinlei/interview-problems/tree/develop/033)
 （2）合并链表  
   
 34  
@@ -918,7 +916,7 @@ ANSWER
 要求时间复杂度，空间复杂度尽量小  
   
 139  
-用递归的方法判断整数组a[N]是不是升序排列  
+[用递归的方法判断整数组a[N]是不是升序排列  ](https://github.com/wangjinlei/interview-problems/tree/develop/139)
   
 
 140  
@@ -934,12 +932,11 @@ char *strcpy(char *strDest, const char *strSrc);
 ## 有新的面试题请在下面添加
 
 142
-写一个二分查找的代码，为了简单起见，只对整型数组查找。  
+[写一个二分查找的代码，为了简单起见，只对整型数组查找。  ](https://github.com/wangjinlei/interview-problems/tree/develop/142)
  Int binarySearch(int *data, int len, int key) {  
     // fill code here.  
 }  
 能分别给出递归以及非递归的代码吗？
 
 143  
-字符串压缩，比如：  
-“eeeeeaaaff" 压缩为 "e5a3f2",请编程实现。  
+[字符串压缩，比如：“eeeeeaaaff" 压缩为 "e5a3f2",请编程实现。  ](https://github.com/wangjinlei/interview-problems/tree/develop/143)

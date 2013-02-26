@@ -945,3 +945,6 @@ char *strcpy(char *strDest, const char *strSrc);
 
 143  
 [字符串压缩，比如：“eeeeeaaaff" 压缩为 "e5a3f2",请编程实现。  ](https://github.com/wangjinlei/interview-problems/tree/develop/143)
+
+144  
+[DomIII 中变态的 invsers-sqrt()  ](https://github.com/wangjinlei/interview-problems/tree/develop/144)

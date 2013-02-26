@@ -487,7 +487,7 @@ ANSWER
 有什么办法呢？  
   
 65  
-数值的整数次方。  
+[数值的整数次方。](https://github.com/wangjinlei/interview-problems/tree/develop/142)  
 题目：实现函数double Power(double base, int exponent)，求base 的exponent 次方。  
 不需要考虑溢出。  
 分析：这是一道看起来很简单的问题。可能有不少的人在看到题目后30 秒写出如下的代码：  

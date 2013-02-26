@@ -4,8 +4,11 @@
  */
 
 public class Math {
+	
+	public static final int BIT_PER_WORD = 32;
+	
 
-	public static int abs(int d) {
+	private static int abs(int d) {
 		if (d < 0) {
 			return 0 - d;
 		}
@@ -31,6 +34,20 @@ public class Math {
 	// b^8 = ((b^2)^2)^2  b^20 = b^16 * b^4 = ...
 	private static double elegantHelper(double base, int exponent) {
 		double result = 1.0d;
+		for (int i = 0; i < BIT_PER_WORD; i++) {
+			// to test ith bit is zero or not
+			int mask;
+			if (i == 0) {
+				mask = 1;
+			} else {
+				mask = 2 << i;
+			}
+			if ((exponent & mask) != 0) { 
+				for (int j = 0; j < i; j++) {
+					// to filled...
+				}
+			}
+		}
 		
 		
 		return result;
@@ -42,6 +59,8 @@ public class Math {
 	}
 	
 	public static void main(String[] args) {
+		System.out.println(2 << 0);
+		System.out.println(2 << 1);
 		System.out.println(poorPower(2.0, -3));
 	}
 }

@@ -29,38 +29,41 @@ public class Math {
 		return result;
 	}
 	
+	// -------------------------------------------------------------------------------------------
 	
 	// We will provide an elegant implementation for you.
 	// b^8 = ((b^2)^2)^2  b^20 = b^16 * b^4 = ...
 	private static double elegantHelper(double base, int exponent) {
 		double result = 1.0d;
 		for (int i = 0; i < BIT_PER_WORD; i++) {
-			// to test ith bit is zero or not
-			int mask;
-			if (i == 0) {
-				mask = 1;
-			} else {
-				mask = 2 << i;
-			}
+			int mask = (i == 0) ? (1) : (2 << i - 1);
 			if ((exponent & mask) != 0) { 
-				for (int j = 0; j < i; j++) {
-					// to filled...
-				}
+				result *= power2E(base, i);
 			}
 		}
-		
-		
 		return result;
 	}
 	
+	// exponent是2的幂
+	private static double power2E(double b, int e) {
+		double p = b;
+		for (int i = 0; i < e; i++) {
+			p *= p;
+		}
+		return p;
+	}
+	
 	public static double power(double base, int exponent) {
-
-		return 0.0d;
+		boolean negative = (exponent < 0);
+		return negative ? (1 / elegantHelper(base, abs(exponent))) : elegantHelper(base, abs(exponent));
 	}
 	
 	public static void main(String[] args) {
-		System.out.println(2 << 0);
-		System.out.println(2 << 1);
+		
 		System.out.println(poorPower(2.0, -3));
+		System.out.println(power(2.0, 3));
+		System.out.println(power(2.0, -3));
+		System.out.println(power(2.0, 0));
+		
 	}
 }

@@ -16,25 +16,24 @@ public class Symmetric {
 		return low >= high;
 	}
 	
+	
 	// -------------------------------------------------------------------
-	
-	
 	public static boolean even(int i) {
 		return (i & 1) == 0;
 	}
 	
 	public static int right(int len) {
 		if (even(len)) {
-			return len / 2;
+			return len >> 1;
 		}
-		return len / 2 + 1;
+		return len >> 1 + 1;
 	}
 	
 	public static int left(int len) {
 		if (even(len)) {
-			return len / 2 - 1;
+			return len >> 1 - 1;
 		}
-		return len / 2 - 1;
+		return len >> 1;
 	}
 	
 	// another way to check a string is symmetric or not
@@ -43,7 +42,7 @@ public class Symmetric {
 		int right = right(len);
 		int left = left(len);
 		
-		while (right <= len && left >= 0 && s.charAt(left) == s.charAt(right)) {
+		while (right <= len - 1 && left >= 0 && s.charAt(left) == s.charAt(right)) {
 			left--;
 			right++;
 		}

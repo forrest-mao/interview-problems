@@ -57,7 +57,7 @@ public class Symmetric {
 	// ------------------------------------------------------------------
 	public static void main(String[] args) {
 		
-		// test case
+		// test case for another to check whether a string is symmetric or not.
 		{
 			System.out.println(isSymmetric(""));	
 			System.out.println(isSymmetric("a"));	
@@ -68,7 +68,7 @@ public class Symmetric {
 		
 		System.out.println("\n");
 		
-		// test case
+		// test case for the classical way to test a string symmetric or not.
 		{
 			System.out.println(commonWay(""));	
 			System.out.println(commonWay("a"));	

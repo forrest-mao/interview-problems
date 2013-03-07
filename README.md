@@ -948,3 +948,6 @@ char *strcpy(char *strDest, const char *strSrc);
 
 144  
 [DomIII 中变态的 invsers-sqrt()  ](https://github.com/wangjinlei/interview-problems/tree/develop/144)
+
+145  
+给定一个按升序排列的数组a，以及一个整数k，查找该数组中是否存在该整数，如果存在返回最大的下标i使得a[i]=k。

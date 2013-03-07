@@ -13,7 +13,7 @@ public class Find {
 	// a good one
 	public static int search(int[] a, int key) {
 		int l = 0, u = a.length - 1; 
-		while (l < u - 1) {        // final configuration u l
+		while (l < u - 1) {        // final configuration  lo upper
 			int m = (l + u) >>> 1;
 			if (a[m] <= key)
 				l = m;
@@ -23,7 +23,7 @@ public class Find {
 		return (a[u] == key) ? (u) : (a[l] == key ? l : -1);
 	}
 
-	// still in dubug stage
+	// still in debug stage
 	public static int bsearch(int[] a, int key) {
 		int low = 0, hi = a.length - 1;
 		while (low <= hi - 1) {

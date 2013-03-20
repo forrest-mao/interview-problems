@@ -951,3 +951,7 @@ char *strcpy(char *strDest, const char *strSrc);
 
 145  
 给定一个按升序排列的数组a，以及一个整数k，查找该数组中是否存在该整数，如果存在返回最大的下标i使得a[i]=k。
+
+146  
+不用pre指针的情况下删除一个链表中的之为k的节点  
+int remove(List *head, int k)

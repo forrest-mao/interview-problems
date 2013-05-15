@@ -36,6 +36,7 @@ void del(struct Node *head, int k) {
 		if (begin->v == k) {
 			// delete the node
             *entry = begin->next;
+			free(begin);
 		}
 		// Move entry
 		entry = &begin->next;

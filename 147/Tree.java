@@ -43,8 +43,13 @@ class BinaryTree {
 	// here is the main issue
 	public void levelOrder() {
 		int n = this.getLevel();
-		for (int level = 0; level < n; level++) {
-			this.levelOrder_helper(this.root, level);
+		levelOrder_aux(0, n);
+	}
+
+	private void levelOrder_aux(int level, int n) {
+		if (level < n) {
+			levelOrder_helper(root, level);
+			levelOrder_aux(level + 1, n);
 		}
 	}
 
@@ -59,7 +64,6 @@ class BinaryTree {
 		}
 
 		levelOrder_helper(root.lchild, level-1);
-
 		levelOrder_helper(root.rchild, level-1);
 	}
 		

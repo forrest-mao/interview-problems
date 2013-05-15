@@ -938,7 +938,9 @@ char *strcpy(char *strDest, const char *strSrc);
 
 142
 [写一个二分查找的代码，为了简单起见，只对整型数组查找。  ](https://github.com/wangjinlei/interview-problems/tree/develop/142)
- Int binarySearch(int *data, int len, int key) {  
+
+
+int binarySearch(int *data, int len, int key) {  
     // fill code here.  
 }  
 能分别给出递归以及非递归的代码吗？

@@ -100,16 +100,33 @@ class BinaryTree {
 
 	//-------------------------------------------------------------
 	
-	public int nleaf() {
-		return this.nleaf_helper(this.root);
+	public int nnodes() {
+		return this.nnodes_helper(this.root);
 	}
 
-	public int nleaf_helper(Node root) {
+	public int nnodes_helper(Node root) {
 		if (root == null) {
 			return 0;
 		}
 
-		return (nleaf_helper(root.lchild) + 1) + (nleaf_helper(root.rchild));
+		return (nnodes_helper(root.lchild) + 1) + (nnodes_helper(root.rchild));
+	}
+
+	// --------------------------------------------------------------
+	public int nleaf() {
+		return this.nleaf_helper(this.root);
+	}
+
+	private int nleaf_helper(Node root) {
+		if (root == null) {
+			return 0;
+		}
+
+		if (root.lchild == null && root.rchild == null) {
+			return 1;
+		}
+
+		return nleaf_helper(root.rchild) + nleaf_helper(root.lchild);
 	}
 }
 
@@ -138,6 +155,8 @@ public class Tree {
 		System.out.println("level : " + level);
 
 		bt.levelOrder();
+
+		System.out.println("nnodes : " + bt.nnodes());
 
 		System.out.println("nleaf : " + bt.nleaf());
 	}

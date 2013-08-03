@@ -1,22 +1,32 @@
-// Author : wangjinlei
-// Email  : sea11107@mail.ustc.edu.cn
-// This is a ansic C implementation for problem No.1
-
-//////////////////////////////////////////////////////////
-/*
- * Problem Description
- * 给出洗牌的一个算法，并将洗好的牌存储在一个整形数组里。
- */
-
 #include <stdio.h>
+#include <stdlib.h>
+#include <assert.h>
 
-void shuffle(int* data, int n) {
 
+static int randBetween(int from, int to)
+{
+		
 }
 
-int main() {
-	
-
-	return 1;
+void shuffle(int *a, int n) 
+{
+	assert(a != NULL);
+	int i;
+	for (i = 0; i < n; i++) {
+		int rndIndex = randBetween(i, n);
+		swap(a, i, rndIndex);
+	}	
 }
 
+static void swap(int *a, int i, int j) 
+{	
+	assert(a != NULL);
+	int t = *(a + i);
+	*(a + i) = *(a + j);
+	*(a + j) = t;
+}
+
+int main() 
+{
+
+}
